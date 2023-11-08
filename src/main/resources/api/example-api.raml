@@ -1,0 +1,15 @@
+#%RAML 1.0
+title: example-api
+
+/familydetails:
+  get:
+    description: this is used for internal call
+    queryParameters:
+      fname:
+        type: string
+        required: true 
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include /example.json
